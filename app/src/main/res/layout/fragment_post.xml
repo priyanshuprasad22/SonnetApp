@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFragment">
+
+
+    <TextView
+        android:id="@+id/not_followed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Not following anyone!!"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadactivity"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_recycler_view"
+            android:layout_marginBottom="70dp"/>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="150dp"
+                android:contentDescription="Post"
+                app:srcCompat="@drawable/plus"
+                app:backgroundTint="#1994F6"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

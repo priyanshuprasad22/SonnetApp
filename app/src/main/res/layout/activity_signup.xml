@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textColor="#2B9DF6"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_name"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/txt_email"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:hint="Email"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_password"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:hint="Password"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:hint="Confirm Password"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/confirm_password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/btn_color"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="368dp"
+        android:layout_height="213dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/connect" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

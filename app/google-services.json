@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955910965960",
+    "firebase_url": "https://sonnetapp-f5e71-default-rtdb.firebaseio.com",
+    "project_id": "sonnetapp-f5e71",
+    "storage_bucket": "sonnetapp-f5e71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955910965960:android:ba9d589d51890b7d1a33fd",
+        "android_client_info": {
+          "package_name": "com.example.sonnetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955910965960-tvcaqu387mc4ccro7tfpk9fr6j1ijdk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjY19eYf6-NuIAN61sQt9uc5_u2kvcMSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955910965960-tvcaqu387mc4ccro7tfpk9fr6j1ijdk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

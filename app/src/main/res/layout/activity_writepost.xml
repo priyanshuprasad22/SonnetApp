@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/upload"
+        app:lottie_rawRes="@raw/upload"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewSelectedImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_insert_photo_24"
+        android:background="#E6E5E5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Choose Image"
+        android:background="@drawable/btn_color"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4EFEF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#F4EFEF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="10"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmitPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Post"
+        android:background="@drawable/btn_color" />
+
+</LinearLayout>
